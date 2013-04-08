@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A09C5B8170BD7440022581B /* home_40.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A09C5B7170BD7440022581B /* home_40.png */; };
+		1A09C5BA170BD8350022581B /* dodge_40.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A09C5B9170BD8350022581B /* dodge_40.png */; };
+		1A09C5BC170BD9420022581B /* preview_40.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A09C5BB170BD9420022581B /* preview_40.png */; };
+		1A09C5BE170BD94D0022581B /* pencil_40.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A09C5BD170BD94D0022581B /* pencil_40.png */; };
+		1A09C5C1170BFBC30022581B /* BusinessGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A09C5C0170BFBC30022581B /* BusinessGroupViewController.m */; };
+		1A09C5C3170BFD530022581B /* dodge_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A09C5C2170BFD530022581B /* dodge_30.png */; };
+		1A09C5C5170BFD6A0022581B /* pencil_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A09C5C4170BFD6A0022581B /* pencil_30.png */; };
+		1A09C5C7170BFD7B0022581B /* home_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A09C5C6170BFD7B0022581B /* home_30.png */; };
+		1A09C5C9170BFDE60022581B /* password_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A09C5C8170BFDE60022581B /* password_30.png */; };
 		1A31C31116FFF60900B5C546 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A31C31016FFF60900B5C546 /* UIKit.framework */; };
 		1A31C31316FFF60900B5C546 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A31C31216FFF60900B5C546 /* Foundation.framework */; };
 		1A31C31516FFF60900B5C546 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A31C31416FFF60900B5C546 /* CoreGraphics.framework */; };
@@ -16,12 +25,35 @@
 		1A31C32316FFF60900B5C546 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A31C32216FFF60900B5C546 /* Default.png */; };
 		1A31C32516FFF60900B5C546 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A31C32416FFF60900B5C546 /* Default@2x.png */; };
 		1A31C32716FFF60900B5C546 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A31C32616FFF60900B5C546 /* Default-568h@2x.png */; };
-		1A31C32A16FFF60900B5C546 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A31C32816FFF60900B5C546 /* MainStoryboard.storyboard */; };
-		1A31C33616FFF66A00B5C546 /* MainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A31C33516FFF66A00B5C546 /* MainTabViewController.m */; };
 		1A31C33916FFF6C900B5C546 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A31C33816FFF6C900B5C546 /* tabbar.png */; };
+		1A8ABBC717126F23000CA09A /* TabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8ABBC617126F23000CA09A /* TabbarViewController.xib */; };
+		1A8ABBCA171272D3000CA09A /* VSTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8ABBC9171272D3000CA09A /* VSTabViewController.m */; };
+		1A8ABBCB1712ABF3000CA09A /* UIImage+ImageProcessing.h in Sources */ = {isa = PBXBuildFile; fileRef = 1A09C5CC170C12950022581B /* UIImage+ImageProcessing.h */; };
+		1A8ABBCC1712ABF3000CA09A /* UIImage+ImageProcessing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A09C5CD170C12950022581B /* UIImage+ImageProcessing.m */; };
+		1A8ABBCD1712ABF3000CA09A /* VSTabBar.h in Sources */ = {isa = PBXBuildFile; fileRef = 1A09C5CE170C12950022581B /* VSTabBar.h */; };
+		1A8ABBCE1712ABF3000CA09A /* VSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A09C5CF170C12950022581B /* VSTabBar.m */; };
+		1A8ABBCF1712ABF3000CA09A /* VSTabBarItem.h in Sources */ = {isa = PBXBuildFile; fileRef = 1A09C5D0170C12950022581B /* VSTabBarItem.h */; };
+		1A8ABBD01712ABF3000CA09A /* VSTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A09C5D1170C12950022581B /* VSTabBarItem.m */; };
+		1A8ABBD21712C12E000CA09A /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8ABBD11712C12E000CA09A /* HomeStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A09C5B7170BD7440022581B /* home_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_40.png; sourceTree = "<group>"; };
+		1A09C5B9170BD8350022581B /* dodge_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dodge_40.png; sourceTree = "<group>"; };
+		1A09C5BB170BD9420022581B /* preview_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preview_40.png; sourceTree = "<group>"; };
+		1A09C5BD170BD94D0022581B /* pencil_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil_40.png; sourceTree = "<group>"; };
+		1A09C5BF170BFBC30022581B /* BusinessGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusinessGroupViewController.h; path = Contrller/BusinessGroupViewController.h; sourceTree = "<group>"; };
+		1A09C5C0170BFBC30022581B /* BusinessGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusinessGroupViewController.m; path = Contrller/BusinessGroupViewController.m; sourceTree = "<group>"; };
+		1A09C5C2170BFD530022581B /* dodge_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dodge_30.png; sourceTree = "<group>"; };
+		1A09C5C4170BFD6A0022581B /* pencil_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil_30.png; sourceTree = "<group>"; };
+		1A09C5C6170BFD7B0022581B /* home_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_30.png; sourceTree = "<group>"; };
+		1A09C5C8170BFDE60022581B /* password_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password_30.png; sourceTree = "<group>"; };
+		1A09C5CC170C12950022581B /* UIImage+ImageProcessing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageProcessing.h"; sourceTree = "<group>"; };
+		1A09C5CD170C12950022581B /* UIImage+ImageProcessing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageProcessing.m"; sourceTree = "<group>"; };
+		1A09C5CE170C12950022581B /* VSTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSTabBar.h; sourceTree = "<group>"; };
+		1A09C5CF170C12950022581B /* VSTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSTabBar.m; sourceTree = "<group>"; };
+		1A09C5D0170C12950022581B /* VSTabBarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSTabBarItem.h; sourceTree = "<group>"; };
+		1A09C5D1170C12950022581B /* VSTabBarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSTabBarItem.m; sourceTree = "<group>"; };
 		1A31C30D16FFF60900B5C546 /* 励中助友.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "励中助友.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A31C31016FFF60900B5C546 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1A31C31216FFF60900B5C546 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,10 +67,11 @@
 		1A31C32216FFF60900B5C546 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		1A31C32416FFF60900B5C546 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1A31C32616FFF60900B5C546 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		1A31C32916FFF60900B5C546 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		1A31C33416FFF66A00B5C546 /* MainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainTabViewController.h; path = Contrller/MainTabViewController.h; sourceTree = "<group>"; };
-		1A31C33516FFF66A00B5C546 /* MainTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTabViewController.m; path = Contrller/MainTabViewController.m; sourceTree = "<group>"; };
 		1A31C33816FFF6C900B5C546 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
+		1A8ABBC617126F23000CA09A /* TabbarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabbarViewController.xib; path = UserInterface/TabbarViewController.xib; sourceTree = "<group>"; };
+		1A8ABBC8171272D3000CA09A /* VSTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSTabViewController.h; path = Contrller/VSTabViewController.h; sourceTree = "<group>"; };
+		1A8ABBC9171272D3000CA09A /* VSTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSTabViewController.m; path = Contrller/VSTabViewController.m; sourceTree = "<group>"; };
+		1A8ABBD11712C12E000CA09A /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = HomeStoryboard.storyboard; path = UserInterface/HomeStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +88,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A09C5CA170C12380022581B /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				1A09C5CB170C126C0022581B /* VSTabBar */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		1A09C5CB170C126C0022581B /* VSTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1A09C5CC170C12950022581B /* UIImage+ImageProcessing.h */,
+				1A09C5CD170C12950022581B /* UIImage+ImageProcessing.m */,
+				1A09C5CE170C12950022581B /* VSTabBar.h */,
+				1A09C5CF170C12950022581B /* VSTabBar.m */,
+				1A09C5D0170C12950022581B /* VSTabBarItem.h */,
+				1A09C5D1170C12950022581B /* VSTabBarItem.m */,
+			);
+			name = VSTabBar;
+			sourceTree = "<group>";
+		};
+		1A09C5D2170C14D10022581B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		1A31C30416FFF60900B5C546 = {
 			isa = PBXGroup;
 			children = (
@@ -85,10 +146,12 @@
 		1A31C31616FFF60900B5C546 /* 励中助友 */ = {
 			isa = PBXGroup;
 			children = (
+				1A8ABBC517126AF2000CA09A /* UserInterface */,
+				1A09C5D2170C14D10022581B /* Common */,
+				1A09C5CA170C12380022581B /* Lib */,
 				1A31C33316FFF63100B5C546 /* Controller */,
 				1A31C31F16FFF60900B5C546 /* AppDelegate.h */,
 				1A31C32016FFF60900B5C546 /* AppDelegate.m */,
-				1A31C32816FFF60900B5C546 /* MainStoryboard.storyboard */,
 				1A31C31716FFF60900B5C546 /* Supporting Files */,
 			);
 			path = "励中助友";
@@ -112,8 +175,10 @@
 		1A31C33316FFF63100B5C546 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1A31C33416FFF66A00B5C546 /* MainTabViewController.h */,
-				1A31C33516FFF66A00B5C546 /* MainTabViewController.m */,
+				1A09C5BF170BFBC30022581B /* BusinessGroupViewController.h */,
+				1A09C5C0170BFBC30022581B /* BusinessGroupViewController.m */,
+				1A8ABBC8171272D3000CA09A /* VSTabViewController.h */,
+				1A8ABBC9171272D3000CA09A /* VSTabViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -121,9 +186,26 @@
 		1A31C33716FFF6AE00B5C546 /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				1A09C5B7170BD7440022581B /* home_40.png */,
+				1A09C5BD170BD94D0022581B /* pencil_40.png */,
+				1A09C5B9170BD8350022581B /* dodge_40.png */,
+				1A09C5C2170BFD530022581B /* dodge_30.png */,
+				1A09C5C4170BFD6A0022581B /* pencil_30.png */,
+				1A09C5C8170BFDE60022581B /* password_30.png */,
+				1A09C5C6170BFD7B0022581B /* home_30.png */,
+				1A09C5BB170BD9420022581B /* preview_40.png */,
 				1A31C33816FFF6C900B5C546 /* tabbar.png */,
 			);
 			name = UIElements;
+			sourceTree = "<group>";
+		};
+		1A8ABBC517126AF2000CA09A /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				1A8ABBC617126F23000CA09A /* TabbarViewController.xib */,
+				1A8ABBD11712C12E000CA09A /* HomeStoryboard.storyboard */,
+			);
+			name = UserInterface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,8 +263,17 @@
 				1A31C32316FFF60900B5C546 /* Default.png in Resources */,
 				1A31C32516FFF60900B5C546 /* Default@2x.png in Resources */,
 				1A31C32716FFF60900B5C546 /* Default-568h@2x.png in Resources */,
-				1A31C32A16FFF60900B5C546 /* MainStoryboard.storyboard in Resources */,
 				1A31C33916FFF6C900B5C546 /* tabbar.png in Resources */,
+				1A09C5B8170BD7440022581B /* home_40.png in Resources */,
+				1A09C5BA170BD8350022581B /* dodge_40.png in Resources */,
+				1A09C5BC170BD9420022581B /* preview_40.png in Resources */,
+				1A09C5BE170BD94D0022581B /* pencil_40.png in Resources */,
+				1A09C5C3170BFD530022581B /* dodge_30.png in Resources */,
+				1A09C5C5170BFD6A0022581B /* pencil_30.png in Resources */,
+				1A09C5C7170BFD7B0022581B /* home_30.png in Resources */,
+				1A09C5C9170BFDE60022581B /* password_30.png in Resources */,
+				1A8ABBC717126F23000CA09A /* TabbarViewController.xib in Resources */,
+				1A8ABBD21712C12E000CA09A /* HomeStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,9 +284,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8ABBCB1712ABF3000CA09A /* UIImage+ImageProcessing.h in Sources */,
+				1A8ABBCC1712ABF3000CA09A /* UIImage+ImageProcessing.m in Sources */,
+				1A8ABBCD1712ABF3000CA09A /* VSTabBar.h in Sources */,
+				1A8ABBCE1712ABF3000CA09A /* VSTabBar.m in Sources */,
+				1A8ABBCF1712ABF3000CA09A /* VSTabBarItem.h in Sources */,
+				1A8ABBD01712ABF3000CA09A /* VSTabBarItem.m in Sources */,
 				1A31C31D16FFF60900B5C546 /* main.m in Sources */,
 				1A31C32116FFF60900B5C546 /* AppDelegate.m in Sources */,
-				1A31C33616FFF66A00B5C546 /* MainTabViewController.m in Sources */,
+				1A09C5C1170BFBC30022581B /* BusinessGroupViewController.m in Sources */,
+				1A8ABBCA171272D3000CA09A /* VSTabViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,14 +306,6 @@
 				1A31C31A16FFF60900B5C546 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		1A31C32816FFF60900B5C546 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A31C32916FFF60900B5C546 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -318,6 +408,7 @@
 				1A31C33216FFF60A00B5C546 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class VSTabViewController;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) VSTabViewController *viewController;
 
 @end
