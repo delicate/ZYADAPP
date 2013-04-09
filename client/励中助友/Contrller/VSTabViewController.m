@@ -7,6 +7,7 @@
 //
 
 #import "VSTabViewController.h"
+#import "AppSettings.h"
 
 
 @interface VSTabViewController ()
@@ -31,7 +32,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    VSTabBar* tabBar = [[VSTabBar alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - TABBAR_HEIGHT, self.view.frame.size.width, TABBAR_HEIGHT)];    
+    VSTabBar* tabBar = [[VSTabBar alloc] initWithFrame:CGRectMake(0, APP_SCREEN_HEIGHT - TABBAR_HEIGHT - 20, APP_SCREEN_WIDTH, TABBAR_HEIGHT)];
     tabBar.delegate = self;
     NSArray* array = [[NSArray alloc] initWithObjects:
                       [[VSTabBarItem alloc] initWithTitle:@"主页"],
@@ -42,7 +43,7 @@
     [tabBar setItems:array];
     tabBar.drawImage = NO;
     
-    _contextArea = [[UIView alloc] initWithFrame:CGRectMake(0, -20, self.view.frame.size.width, self.view.frame.size.height - TABBAR_HEIGHT)];
+    _contextArea = [[UIView alloc] initWithFrame:CGRectMake(0, -20, APP_SCREEN_WIDTH, APP_SCREEN_HEIGHT - TABBAR_HEIGHT)];
     
     [self.view addSubview:_contextArea];
     [self.view addSubview:tabBar];

@@ -4,21 +4,191 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Business Group View Controller-->
         <scene sceneID="TdI-B2-iWB">
             <objects>
-                <viewController storyboardIdentifier="page1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TTP-Z5-elv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="page1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TTP-Z5-elv" customClass="BusinessGroupViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pFS-HZ-vrm">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRd-zT-mNx" customClass="IAInfiniteGridView">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" type="user" id="po9-Mh-XPt"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="TTP-Z5-elv" id="oig-v6-Yu2"/>
+                                </connections>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXD-aB-O9p">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" type="user" id="HD7-od-7Lh"/>
+                                    <constraint firstAttribute="width" constant="85" id="Se2-du-Gns"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="design.png" backgroundImage="dodge_40.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="designButtonPressed:" destination="TTP-Z5-elv" eventType="touchUpInside" id="i7F-CV-5sM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4W-Sq-KwE">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="GpG-9U-67z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="photography.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="photoGraphyButtonPressed:" destination="TTP-Z5-elv" eventType="touchUpInside" id="dLN-zu-P0Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59y-gE-ICz">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" type="user" id="uuU-pC-Ugn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="app.png" backgroundImage="dodge_40.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="appButtonPressed:" destination="TTP-Z5-elv" eventType="touchUpInside" id="zz3-uC-ZO1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5l-Ru-rfw">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="printing.png" backgroundImage="dodge_40.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="printingButtonPressed:" destination="TTP-Z5-elv" eventType="touchUpInside" id="pp4-WW-Z6Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="  设计" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbO-CB-vsX">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="Kq2-Nm-67A"/>
+                                    <constraint firstAttribute="height" constant="15" id="vW7-D0-hXB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="  摄影" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwj-vM-VRC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="g3s-qB-f89"/>
+                                    <constraint firstAttribute="width" constant="42" id="hTG-0l-8Zz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="  移动互联" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtE-Hs-gcX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8k4-Iq-Fzx"/>
+                                    <constraint firstAttribute="width" constant="74" id="dqV-Rc-39l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="  印刷" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIy-Sn-xNv">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="59y-gE-ICz" firstAttribute="trailing" secondItem="cXD-aB-O9p" secondAttribute="trailing" type="default" id="83k-mg-Q4W"/>
+                            <constraint firstItem="59y-gE-ICz" firstAttribute="leading" secondItem="cXD-aB-O9p" secondAttribute="leading" type="default" id="BxF-ya-YQm"/>
+                            <constraint firstItem="Qwj-vM-VRC" firstAttribute="trailing" secondItem="WIy-Sn-xNv" secondAttribute="trailing" type="default" id="FkN-U8-kIL"/>
+                            <constraint firstItem="PRd-zT-mNx" firstAttribute="top" secondItem="pFS-HZ-vrm" secondAttribute="top" type="user" id="GG3-eb-Df7"/>
+                            <constraint firstItem="rtE-Hs-gcX" firstAttribute="top" secondItem="59y-gE-ICz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Mtu-ye-huX"/>
+                            <constraint firstItem="WIy-Sn-xNv" firstAttribute="top" secondItem="g5l-Ru-rfw" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Tq3-n9-xGx"/>
+                            <constraint firstItem="Qwj-vM-VRC" firstAttribute="leading" secondItem="WIy-Sn-xNv" secondAttribute="leading" type="default" id="VWU-m3-HPZ"/>
+                            <constraint firstItem="cXD-aB-O9p" firstAttribute="leading" secondItem="pFS-HZ-vrm" secondAttribute="leading" constant="35" id="Yys-Ih-x9X"/>
+                            <constraint firstItem="bbO-CB-vsX" firstAttribute="centerX" secondItem="cXD-aB-O9p" secondAttribute="centerX" type="default" id="ZZB-Pq-3Lj"/>
+                            <constraint firstItem="59y-gE-ICz" firstAttribute="centerX" secondItem="rtE-Hs-gcX" secondAttribute="centerX" type="default" id="aLS-yw-TcU"/>
+                            <constraint firstItem="g5l-Ru-rfw" firstAttribute="top" secondItem="59y-gE-ICz" secondAttribute="top" type="default" id="aiK-wX-Yfq"/>
+                            <constraint firstItem="bbO-CB-vsX" firstAttribute="top" secondItem="cXD-aB-O9p" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="b8q-XT-DaV"/>
+                            <constraint firstItem="PRd-zT-mNx" firstAttribute="trailing" secondItem="pFS-HZ-vrm" secondAttribute="trailing" type="default" id="g5O-hI-1rz"/>
+                            <constraint firstItem="PRd-zT-mNx" firstAttribute="leading" secondItem="pFS-HZ-vrm" secondAttribute="leading" type="default" id="gDh-NA-pr5"/>
+                            <constraint firstItem="V4W-Sq-KwE" firstAttribute="centerX" secondItem="Qwj-vM-VRC" secondAttribute="centerX" type="default" id="iwi-9f-bUB"/>
+                            <constraint firstItem="WIy-Sn-xNv" firstAttribute="baseline" secondItem="rtE-Hs-gcX" secondAttribute="baseline" type="default" id="kEt-4N-x8e"/>
+                            <constraint firstAttribute="trailing" secondItem="V4W-Sq-KwE" secondAttribute="trailing" constant="35" id="kiL-8s-AKN"/>
+                            <constraint firstItem="WIy-Sn-xNv" firstAttribute="top" secondItem="rtE-Hs-gcX" secondAttribute="top" type="default" id="kme-UR-W7T"/>
+                            <constraint firstItem="V4W-Sq-KwE" firstAttribute="top" secondItem="cXD-aB-O9p" secondAttribute="top" type="default" id="ley-fE-guf"/>
+                            <constraint firstItem="59y-gE-ICz" firstAttribute="top" secondItem="cXD-aB-O9p" secondAttribute="bottom" constant="40" type="user" id="n7I-Z0-8zd"/>
+                            <constraint firstItem="bbO-CB-vsX" firstAttribute="centerY" secondItem="Qwj-vM-VRC" secondAttribute="centerY" type="default" id="pXO-De-01a"/>
+                            <constraint firstItem="g5l-Ru-rfw" firstAttribute="leading" secondItem="V4W-Sq-KwE" secondAttribute="leading" type="default" id="q8g-r2-e2R"/>
+                            <constraint firstItem="V4W-Sq-KwE" firstAttribute="bottom" secondItem="cXD-aB-O9p" secondAttribute="bottom" type="default" id="snX-Fo-2eS"/>
+                            <constraint firstItem="g5l-Ru-rfw" firstAttribute="trailing" secondItem="V4W-Sq-KwE" secondAttribute="trailing" type="default" id="vdS-cH-AFj"/>
+                            <constraint firstItem="cXD-aB-O9p" firstAttribute="top" secondItem="PRd-zT-mNx" secondAttribute="bottom" constant="22" type="user" id="zDJ-B0-gUg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="appButton" destination="59y-gE-ICz" id="WKf-R4-AtC"/>
+                        <outlet property="designButton" destination="cXD-aB-O9p" id="cng-fZ-Zph"/>
+                        <outlet property="gridView" destination="PRd-zT-mNx" id="lGx-wy-ae4"/>
+                        <outlet property="photographyButton" destination="V4W-Sq-KwE" id="kRV-Xi-Y8e"/>
+                        <outlet property="printingButton" destination="g5l-Ru-rfw" id="Mch-Vo-C9B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Umn-VR-Efb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="119" y="70"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="app.png" width="150" height="67"/>
+        <image name="design.png" width="150" height="67"/>
+        <image name="dodge_40.png" width="40" height="40"/>
+        <image name="photography.png" width="150" height="67"/>
+        <image name="printing.png" width="150" height="67"/>
+    </resources>
+    <classes>
+        <class className="BusinessGroupViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BusinessGroupViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="appButtonPressed:"/>
+                <relationship kind="action" name="designButtonPressed:"/>
+                <relationship kind="action" name="photoGraphyButtonPressed:"/>
+                <relationship kind="action" name="printingButtonPressed:"/>
+                <relationship kind="outlet" name="appButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="designButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="gridView" candidateClass="IAInfiniteGridView"/>
+                <relationship kind="outlet" name="photographyButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="printingButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="IAInfiniteGridView" superclassName="UIScrollView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IAInfiniteGridView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
