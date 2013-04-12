@@ -13,4 +13,6 @@
 
 @interface VSTabViewController : UIViewController <VSTabBarDelegate>
 
+@property (retain, nonatomic) UIViewController *homeViewController;
+
 @end

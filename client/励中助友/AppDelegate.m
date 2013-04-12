@@ -22,6 +22,7 @@
     self.viewController = [[VSTabViewController alloc] initWithNibName:@"TabbarViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    sleep(3);
     
     return YES;
 }

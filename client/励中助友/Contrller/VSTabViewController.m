@@ -18,6 +18,7 @@
 @end
 
 @implementation VSTabViewController
+@synthesize homeViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -47,6 +48,8 @@
     
     [self.view addSubview:_contextArea];
     [self.view addSubview:tabBar];
+    
+    [self loadHomeView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,12 +62,8 @@
 {
     switch (index) {
         case 0:
-        {
-            UIStoryboard *homeStoryboard = [UIStoryboard storyboardWithName:@"HomeStoryboard" bundle:nil];
-            UIViewController *viewController = [homeStoryboard instantiateViewControllerWithIdentifier:@"page1"];
-            [_contextArea addSubview:viewController.view];
+            [self loadHomeView];
             break;
-        }
         case 1:
             
             break;
@@ -78,6 +77,16 @@
         default:
             break;
     }
+}
+
+- (void) loadHomeView
+{
+    if (!homeViewController)
+    {
+        UIStoryboard *homeStoryboard = [UIStoryboard storyboardWithName:@"HomeStoryboard" bundle:nil];
+        homeViewController = [homeStoryboard instantiateViewControllerWithIdentifier:@"page1"];
+    }
+    [_contextArea addSubview:homeViewController.view];
 }
 
 @end
