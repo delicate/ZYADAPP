@@ -24,18 +24,25 @@
     return app;
 }
 
-+ (NSString *)dbContentFilename
++ (NSString *)documentPath
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *directory = [paths objectAtIndex:0];
-    return [directory stringByAppendingPathComponent:DB_CONTENT_FILE_NAME];
+    return [paths objectAtIndex:0];
+}
+
++ (NSString *)dbContentFilename
+{
+    return [[self documentPath] stringByAppendingPathComponent:DB_CONTENT_FILE_NAME];
 }
 
 + (NSString *) dbCookieFilename
 {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *directory = [paths objectAtIndex:0];
-    return [directory stringByAppendingPathComponent:DB_COOKIE_FILE_NAME];
+    return [[self documentPath] stringByAppendingPathComponent:DB_COOKIE_FILE_NAME];
+}
+
++ (NSString *) getFullFnInDocument:(NSString *)fileName
+{
+    return [[self documentPath] stringByAppendingPathComponent:fileName];
 }
 
 + (NSString *) platform

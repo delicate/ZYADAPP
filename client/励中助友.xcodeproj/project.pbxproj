@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A05F5D517194EC7002F779D /* BusinessCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A05F5D417194EC7002F779D /* BusinessCell.m */; };
+		1A074EDC171FD604009B3272 /* business_photography1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A074ED8171FD604009B3272 /* business_photography1.png */; };
+		1A074EDD171FD604009B3272 /* business_photography2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A074ED9171FD604009B3272 /* business_photography2.png */; };
+		1A074EDE171FD604009B3272 /* business_photography3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A074EDA171FD604009B3272 /* business_photography3.png */; };
+		1A074EDF171FD604009B3272 /* business_photography4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A074EDB171FD604009B3272 /* business_photography4.png */; };
+		1A074EE3171FE009009B3272 /* BusinessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A074EE2171FE009009B3272 /* BusinessCell.xib */; };
 		1A09C5B8170BD7440022581B /* home_40.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A09C5B7170BD7440022581B /* home_40.png */; };
 		1A09C5BA170BD8350022581B /* dodge_40.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A09C5B9170BD8350022581B /* dodge_40.png */; };
 		1A09C5BC170BD9420022581B /* preview_40.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A09C5BB170BD9420022581B /* preview_40.png */; };
@@ -33,10 +39,20 @@
 		1A31C32516FFF60900B5C546 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A31C32416FFF60900B5C546 /* Default@2x.png */; };
 		1A31C32716FFF60900B5C546 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A31C32616FFF60900B5C546 /* Default-568h@2x.png */; };
 		1A31C33916FFF6C900B5C546 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A31C33816FFF6C900B5C546 /* tabbar.png */; };
+		1A4CD179171BEC6F0082F687 /* DynamicFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CD178171BEC6F0082F687 /* DynamicFileManager.m */; };
+		1A4CD17C171BFE300082F687 /* Business.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CD17B171BFE300082F687 /* Business.m */; };
+		1A4CD17F171BFE4A0082F687 /* BusinessList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CD17E171BFE4A0082F687 /* BusinessList.m */; };
 		1A59F1C31717B0EE00C679A2 /* BusinessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A59F1C21717B0EE00C679A2 /* BusinessViewController.m */; };
 		1A8ABBC717126F23000CA09A /* TabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8ABBC617126F23000CA09A /* TabbarViewController.xib */; };
 		1A8ABBCA171272D3000CA09A /* VSTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8ABBC9171272D3000CA09A /* VSTabViewController.m */; };
 		1A8ABBD21712C12E000CA09A /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8ABBD11712C12E000CA09A /* HomeStoryboard.storyboard */; };
+		1A990CA61728FA1D00A1F7E4 /* DeliTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A990CA11728FA1D00A1F7E4 /* DeliTabbar.m */; };
+		1A990CA71728FA1D00A1F7E4 /* DeliTabButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A990CA31728FA1D00A1F7E4 /* DeliTabButton.m */; };
+		1A990CA81728FA1D00A1F7E4 /* tabbar_highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A990CA41728FA1D00A1F7E4 /* tabbar_highlight.png */; };
+		1A990CA91728FA1D00A1F7E4 /* tabbar_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A990CA51728FA1D00A1F7E4 /* tabbar_normal.png */; };
+		1A990CAD17290FB400A1F7E4 /* TabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A990CAC17290FB400A1F7E4 /* TabbarView.m */; };
+		1A990CAF1729185800A1F7E4 /* SearchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A990CAE1729185800A1F7E4 /* SearchStoryboard.storyboard */; };
+		1A990CB2172922B500A1F7E4 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A990CB1172922B500A1F7E4 /* SearchViewController.m */; };
 		1AAD9CDC1713B35D00737F41 /* IAInfiniteGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAD9CDB1713B35D00737F41 /* IAInfiniteGridView.m */; };
 		1AAD9CE31713B39900737F41 /* UIImage+ImageProcessing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAD9CDE1713B39900737F41 /* UIImage+ImageProcessing.m */; };
 		1AAD9CE41713B39900737F41 /* VSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAD9CE01713B39900737F41 /* VSTabBar.m */; };
@@ -54,6 +70,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A05F5D317194EC7002F779D /* BusinessCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusinessCell.h; path = Contrller/BusinessCell.h; sourceTree = "<group>"; };
+		1A05F5D417194EC7002F779D /* BusinessCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusinessCell.m; path = Contrller/BusinessCell.m; sourceTree = "<group>"; };
+		1A074ED8171FD604009B3272 /* business_photography1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = business_photography1.png; sourceTree = "<group>"; };
+		1A074ED9171FD604009B3272 /* business_photography2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = business_photography2.png; sourceTree = "<group>"; };
+		1A074EDA171FD604009B3272 /* business_photography3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = business_photography3.png; sourceTree = "<group>"; };
+		1A074EDB171FD604009B3272 /* business_photography4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = business_photography4.png; sourceTree = "<group>"; };
+		1A074EE2171FE009009B3272 /* BusinessCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BusinessCell.xib; path = UserInterface/BusinessCell.xib; sourceTree = "<group>"; };
 		1A09C5B7170BD7440022581B /* home_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_40.png; sourceTree = "<group>"; };
 		1A09C5B9170BD8350022581B /* dodge_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dodge_40.png; sourceTree = "<group>"; };
 		1A09C5BB170BD9420022581B /* preview_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preview_40.png; sourceTree = "<group>"; };
@@ -85,12 +108,30 @@
 		1A31C32416FFF60900B5C546 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1A31C32616FFF60900B5C546 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1A31C33816FFF6C900B5C546 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
+		1A4CD176171BE9550082F687 /* DelayUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DelayUpdate.h; path = Common/DelayUpdate.h; sourceTree = "<group>"; };
+		1A4CD177171BEC6F0082F687 /* DynamicFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DynamicFileManager.h; path = Common/DynamicFileManager.h; sourceTree = "<group>"; };
+		1A4CD178171BEC6F0082F687 /* DynamicFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DynamicFileManager.m; path = Common/DynamicFileManager.m; sourceTree = "<group>"; };
+		1A4CD17A171BFE300082F687 /* Business.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Business.h; path = model/Business.h; sourceTree = "<group>"; };
+		1A4CD17B171BFE300082F687 /* Business.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Business.m; path = model/Business.m; sourceTree = "<group>"; };
+		1A4CD17D171BFE4A0082F687 /* BusinessList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusinessList.h; path = model/BusinessList.h; sourceTree = "<group>"; };
+		1A4CD17E171BFE4A0082F687 /* BusinessList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusinessList.m; path = model/BusinessList.m; sourceTree = "<group>"; };
 		1A59F1C11717B0EE00C679A2 /* BusinessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusinessViewController.h; path = Contrller/BusinessViewController.h; sourceTree = "<group>"; };
 		1A59F1C21717B0EE00C679A2 /* BusinessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusinessViewController.m; path = Contrller/BusinessViewController.m; sourceTree = "<group>"; };
 		1A8ABBC617126F23000CA09A /* TabbarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabbarViewController.xib; path = UserInterface/TabbarViewController.xib; sourceTree = "<group>"; };
 		1A8ABBC8171272D3000CA09A /* VSTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSTabViewController.h; path = Contrller/VSTabViewController.h; sourceTree = "<group>"; };
 		1A8ABBC9171272D3000CA09A /* VSTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSTabViewController.m; path = Contrller/VSTabViewController.m; sourceTree = "<group>"; };
 		1A8ABBD11712C12E000CA09A /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = HomeStoryboard.storyboard; path = UserInterface/HomeStoryboard.storyboard; sourceTree = "<group>"; };
+		1A990CA01728FA1D00A1F7E4 /* DeliTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliTabbar.h; sourceTree = "<group>"; };
+		1A990CA11728FA1D00A1F7E4 /* DeliTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliTabbar.m; sourceTree = "<group>"; };
+		1A990CA21728FA1D00A1F7E4 /* DeliTabButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliTabButton.h; sourceTree = "<group>"; };
+		1A990CA31728FA1D00A1F7E4 /* DeliTabButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliTabButton.m; sourceTree = "<group>"; };
+		1A990CA41728FA1D00A1F7E4 /* tabbar_highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_highlight.png; sourceTree = "<group>"; };
+		1A990CA51728FA1D00A1F7E4 /* tabbar_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_normal.png; sourceTree = "<group>"; };
+		1A990CAB17290FB400A1F7E4 /* TabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabbarView.h; path = View/TabbarView.h; sourceTree = "<group>"; };
+		1A990CAC17290FB400A1F7E4 /* TabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabbarView.m; path = View/TabbarView.m; sourceTree = "<group>"; };
+		1A990CAE1729185800A1F7E4 /* SearchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SearchStoryboard.storyboard; path = UserInterface/SearchStoryboard.storyboard; sourceTree = "<group>"; };
+		1A990CB0172922B500A1F7E4 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchViewController.h; path = Contrller/SearchViewController.h; sourceTree = "<group>"; };
+		1A990CB1172922B500A1F7E4 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchViewController.m; path = Contrller/SearchViewController.m; sourceTree = "<group>"; };
 		1AAD9CDA1713B35D00737F41 /* IAInfiniteGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAInfiniteGridView.h; path = Library/IAInfiniteGridView/IAInfiniteGridView.h; sourceTree = "<group>"; };
 		1AAD9CDB1713B35D00737F41 /* IAInfiniteGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IAInfiniteGridView.m; path = Library/IAInfiniteGridView/IAInfiniteGridView.m; sourceTree = "<group>"; };
 		1AAD9CDD1713B39900737F41 /* UIImage+ImageProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageProcessing.h"; path = "Library/VSTabBar/UIImage+ImageProcessing.h"; sourceTree = "<group>"; };
@@ -129,9 +170,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A074ECF171FCE79009B3272 /* Temp Test */ = {
+			isa = PBXGroup;
+			children = (
+				1A074ED8171FD604009B3272 /* business_photography1.png */,
+				1A074ED9171FD604009B3272 /* business_photography2.png */,
+				1A074EDA171FD604009B3272 /* business_photography3.png */,
+				1A074EDB171FD604009B3272 /* business_photography4.png */,
+			);
+			name = "Temp Test";
+			sourceTree = "<group>";
+		};
 		1A09C5CA170C12380022581B /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				1A990CAA17290F6C00A1F7E4 /* View */,
+				1A990C9F1728FA1D00A1F7E4 /* DeliTabbar */,
 				1AAD9CD31713B29F00737F41 /* IAInfiniteGridView */,
 				1A09C5CB170C126C0022581B /* VSTabBar */,
 			);
@@ -156,6 +210,9 @@
 			children = (
 				1AAD9CFA1713B9E800737F41 /* AppSettings.h */,
 				1AAD9CFB1713B9E800737F41 /* AppSettings.m */,
+				1A4CD176171BE9550082F687 /* DelayUpdate.h */,
+				1A4CD177171BEC6F0082F687 /* DynamicFileManager.h */,
+				1A4CD178171BEC6F0082F687 /* DynamicFileManager.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -241,6 +298,10 @@
 				1A8ABBC9171272D3000CA09A /* VSTabViewController.m */,
 				1A59F1C11717B0EE00C679A2 /* BusinessViewController.h */,
 				1A59F1C21717B0EE00C679A2 /* BusinessViewController.m */,
+				1A05F5D317194EC7002F779D /* BusinessCell.h */,
+				1A05F5D417194EC7002F779D /* BusinessCell.m */,
+				1A990CB0172922B500A1F7E4 /* SearchViewController.h */,
+				1A990CB1172922B500A1F7E4 /* SearchViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -266,8 +327,32 @@
 			children = (
 				1A8ABBC617126F23000CA09A /* TabbarViewController.xib */,
 				1A8ABBD11712C12E000CA09A /* HomeStoryboard.storyboard */,
+				1A074EE2171FE009009B3272 /* BusinessCell.xib */,
+				1A990CAE1729185800A1F7E4 /* SearchStoryboard.storyboard */,
 			);
 			name = UserInterface;
+			sourceTree = "<group>";
+		};
+		1A990C9F1728FA1D00A1F7E4 /* DeliTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				1A990CA01728FA1D00A1F7E4 /* DeliTabbar.h */,
+				1A990CA11728FA1D00A1F7E4 /* DeliTabbar.m */,
+				1A990CA21728FA1D00A1F7E4 /* DeliTabButton.h */,
+				1A990CA31728FA1D00A1F7E4 /* DeliTabButton.m */,
+				1A990CA41728FA1D00A1F7E4 /* tabbar_highlight.png */,
+				1A990CA51728FA1D00A1F7E4 /* tabbar_normal.png */,
+			);
+			path = DeliTabbar;
+			sourceTree = "<group>";
+		};
+		1A990CAA17290F6C00A1F7E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A990CAB17290FB400A1F7E4 /* TabbarView.h */,
+				1A990CAC17290FB400A1F7E4 /* TabbarView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		1AAD9CD31713B29F00737F41 /* IAInfiniteGridView */ = {
@@ -282,6 +367,7 @@
 		1AAD9CE61713B6C300737F41 /* StaticImage */ = {
 			isa = PBXGroup;
 			children = (
+				1A074ECF171FCE79009B3272 /* Temp Test */,
 				1A1BD28417155EB300C782C9 /* launch */,
 				1AAD9D0C1713FB6400737F41 /* galleryInHome */,
 				1AAD9CF11713B78600737F41 /* buttonInHome */,
@@ -308,6 +394,10 @@
 				1AAD9D051713ED6E00737F41 /* BusinessGroup.m */,
 				1AAD9D071713EDA900737F41 /* BusinessGroupList.h */,
 				1AAD9D081713EDA900737F41 /* BusinessGroupList.m */,
+				1A4CD17A171BFE300082F687 /* Business.h */,
+				1A4CD17B171BFE300082F687 /* Business.m */,
+				1A4CD17D171BFE4A0082F687 /* BusinessList.h */,
+				1A4CD17E171BFE4A0082F687 /* BusinessList.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -403,6 +493,14 @@
 				1A1BD28817155EB300C782C9 /* Launch-568h@2x.png in Resources */,
 				1A1BD28917155EB300C782C9 /* Launch@.png in Resources */,
 				1A1BD28A17155EB300C782C9 /* Launch@2x.png in Resources */,
+				1A074EDC171FD604009B3272 /* business_photography1.png in Resources */,
+				1A074EDD171FD604009B3272 /* business_photography2.png in Resources */,
+				1A074EDE171FD604009B3272 /* business_photography3.png in Resources */,
+				1A074EDF171FD604009B3272 /* business_photography4.png in Resources */,
+				1A074EE3171FE009009B3272 /* BusinessCell.xib in Resources */,
+				1A990CA81728FA1D00A1F7E4 /* tabbar_highlight.png in Resources */,
+				1A990CA91728FA1D00A1F7E4 /* tabbar_normal.png in Resources */,
+				1A990CAF1729185800A1F7E4 /* SearchStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +523,14 @@
 				1AAD9D061713ED6E00737F41 /* BusinessGroup.m in Sources */,
 				1AAD9D091713EDA900737F41 /* BusinessGroupList.m in Sources */,
 				1A59F1C31717B0EE00C679A2 /* BusinessViewController.m in Sources */,
+				1A05F5D517194EC7002F779D /* BusinessCell.m in Sources */,
+				1A4CD179171BEC6F0082F687 /* DynamicFileManager.m in Sources */,
+				1A4CD17C171BFE300082F687 /* Business.m in Sources */,
+				1A4CD17F171BFE4A0082F687 /* BusinessList.m in Sources */,
+				1A990CA61728FA1D00A1F7E4 /* DeliTabbar.m in Sources */,
+				1A990CA71728FA1D00A1F7E4 /* DeliTabButton.m in Sources */,
+				1A990CAD17290FB400A1F7E4 /* TabbarView.m in Sources */,
+				1A990CB2172922B500A1F7E4 /* SearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

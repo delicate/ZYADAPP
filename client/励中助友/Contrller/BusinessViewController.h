@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class BusinessGroup;
+
 @interface BusinessViewController : UICollectionViewController
+
+@property (retain, nonatomic) BusinessGroup *businessGroup;
 
 @end

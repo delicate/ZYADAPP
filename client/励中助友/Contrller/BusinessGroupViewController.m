@@ -11,6 +11,8 @@
 #import "BusinessGroupList.h"
 #import "AppSettings.h"
 
+#import "BusinessViewController.h"
+
 #define kNumberLabelTag 9999
 
 @interface BusinessGroupViewController ()
@@ -35,7 +37,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	[self.view addSubview:globalTabbarView];
     groupList = [BusinessGroupList shareInstance];
     
     [self.gridView setPaging:YES];
@@ -61,6 +63,7 @@
 
 - (IBAction)photoGraphyButtonPressed:(id)sender
 {
+    [self performSegueWithIdentifier:@"showBusinesses" sender:self];
 }
 
 - (IBAction)appButtonPressed:(id)sender
@@ -69,6 +72,13 @@
 
 - (IBAction)printingButtonPressed:(id)sender
 {
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    BusinessViewController *viewController = [segue destinationViewController];
+    viewController.businessGroup = [groupList.items objectAtIndex:1];
+    viewController.view.frame = CGRectMake(0, 0, APP_SCREEN_WIDTH, APP_SCREEN_HEIGHT);
 }
 
 #pragma mark - Data Source Methods

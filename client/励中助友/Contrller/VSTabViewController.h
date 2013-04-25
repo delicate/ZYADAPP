@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "VSTabBar.h"
+#import "DeliTabbar.h"
 
-#define TABBAR_HEIGHT   40
+#define TABBAR_HEIGHT   35
 
-@interface VSTabViewController : UIViewController <VSTabBarDelegate>
+@interface VSTabViewController : UIViewController <DeliTabbarDelegate>
 
 @property (retain, nonatomic) UIViewController *homeViewController;
 

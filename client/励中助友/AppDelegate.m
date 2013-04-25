@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "VSTabViewController.h"
+#import "AppSettings.h"
 
 @implementation AppDelegate
 
@@ -19,10 +20,12 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[VSTabViewController alloc] initWithNibName:@"TabbarViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
-    [self.window makeKeyAndVisible];
-    sleep(3);
+    CGRect tabbarRect = CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 55, [UIScreen mainScreen].bounds.size.width, TABBAR_HEIGHT);
+    globalTabbarView = [[TabbarView alloc] initWithFrame:tabbarRect];
+    globalTabbarView.delegate = self;
+    [self onTabbarFocusIndexChange:0];
+    [globalTabbarView changeFocusIndex:0];
+    //sleep(3);
     
     return YES;
 }
@@ -52,6 +55,32 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)onTabbarFocusIndexChange:(NSInteger)curIndex
+{
+    UIStoryboard *storyboard;
+    switch (curIndex) {
+        case 0:
+            storyboard = [UIStoryboard storyboardWithName:@"HomeStoryboard" bundle:nil];
+            break;
+        case 1:
+            storyboard = [UIStoryboard storyboardWithName:@"SearchStoryboard" bundle:nil];
+            break;
+        default:
+            break;
+    }
+    id destinctViewController = [storyboard instantiateInitialViewController];
+    self.viewController = destinctViewController;
+    self.window.rootViewController = self.viewController;
+    [self.window makeKeyAndVisible];
+}
+
+#pragma mark TabbarViewDelegate
+
+- (void)tabbarFocusIndexChange:(NSInteger)curIndex
+{
+    [self onTabbarFocusIndexChange:curIndex];
 }
 
 @end

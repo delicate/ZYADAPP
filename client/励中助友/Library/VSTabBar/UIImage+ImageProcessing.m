@@ -14,7 +14,7 @@
     const int RED = 1;
     const int GREEN = 2;
     const int BLUE = 3;
-    
+     
     // Create image rectangle with current image width/height
     CGRect imageRect = CGRectMake(0, 0, self.size.width * self.scale, self.size.height * self.scale);
     
