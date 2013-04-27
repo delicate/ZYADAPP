@@ -10,6 +10,8 @@
 #import "BusinessCell.h"
 #import "Business.h"
 #import "BusinessList.h"
+#import "BusinessGroup.h"
+#import "AppSettings.h"
 
 NSString *kCellID = @"BusinessCell";
 
@@ -27,7 +29,7 @@ NSString *kCellID = @"BusinessCell";
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-
+        
     }
     return self;
 }
@@ -37,6 +39,10 @@ NSString *kCellID = @"BusinessCell";
     [super viewDidLoad];
     if (!businessList)
         businessList = [[BusinessList alloc] initWithGroup:businessGroup];
+    [self.view addSubview:globalHeaderView];
+    globalHeaderView.delegate = self;
+    [globalHeaderView setTitle:businessGroup.groupName];
+    self.collectionView.frame = CGRectMake(0, 35, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,7 +70,14 @@ NSString *kCellID = @"BusinessCell";
     }*/
     [cell setImage:business.thumbInTable describe:business.businessName];
     
+    
     return cell;
+}
+
+- (void)goBack
+{
+    [self.navigationController popViewControllerAnimated:YES];
+    //[self ]
 }
 
 @end

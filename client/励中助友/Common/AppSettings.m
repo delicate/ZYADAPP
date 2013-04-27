@@ -53,4 +53,9 @@
     return machine;
 }
 
++ (NSInteger) screenMode
+{
+    return SCREEN_MODE_1136_640;
+}
+
 @end

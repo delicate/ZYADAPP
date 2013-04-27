@@ -8,11 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import "TabbarView.h"
+#import "HeaderView.h"
 
 #define APP_SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 #define APP_SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+#define TABBAR_HEIGHT 35
+#define SCREEN_MODE_480_320 0
+#define SCREEN_MODE_960_640 1
+#define SCREEN_MODE_1136_640 2
 
 TabbarView *globalTabbarView;
+HeaderView *globalHeaderView;
+
 
 @interface AppSettings : NSObject
 
@@ -21,5 +28,6 @@ TabbarView *globalTabbarView;
 + (NSString *) getFullFnInDocument:(NSString *)fileName;
 + (AppSettings *) shareInstance;
 + (NSString *)  platform;
++ (NSInteger) screenMode;
 
 @end

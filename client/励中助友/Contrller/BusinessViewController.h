@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HeaderView.h"
 
 @class BusinessGroup;
 
-@interface BusinessViewController : UICollectionViewController
+@interface BusinessViewController : UICollectionViewController <HeaderViewDelegate>
 
 @property (retain, nonatomic) BusinessGroup *businessGroup;
 

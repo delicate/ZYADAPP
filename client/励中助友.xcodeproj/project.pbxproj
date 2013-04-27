@@ -29,6 +29,12 @@
 		1A1BD28817155EB300C782C9 /* Launch-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1BD28517155EB300C782C9 /* Launch-568h@2x.png */; };
 		1A1BD28917155EB300C782C9 /* Launch@.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1BD28617155EB300C782C9 /* Launch@.png */; };
 		1A1BD28A17155EB300C782C9 /* Launch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1BD28717155EB300C782C9 /* Launch@2x.png */; };
+		1A27891E172A708A00B917D4 /* MessageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A27891D172A708A00B917D4 /* MessageStoryboard.storyboard */; };
+		1A278924172A741200B917D4 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A278923172A741200B917D4 /* HeaderView.m */; };
+		1A27892A172A775600B917D4 /* goback_highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A278926172A775600B917D4 /* goback_highlight.png */; };
+		1A27892B172A775600B917D4 /* goback_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A278927172A775600B917D4 /* goback_normal.png */; };
+		1A27892C172A775600B917D4 /* gohome_highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A278928172A775600B917D4 /* gohome_highlight.png */; };
+		1A27892D172A775600B917D4 /* gohome_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A278929172A775600B917D4 /* gohome_normal.png */; };
 		1A31C31116FFF60900B5C546 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A31C31016FFF60900B5C546 /* UIKit.framework */; };
 		1A31C31316FFF60900B5C546 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A31C31216FFF60900B5C546 /* Foundation.framework */; };
 		1A31C31516FFF60900B5C546 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A31C31416FFF60900B5C546 /* CoreGraphics.framework */; };
@@ -43,8 +49,6 @@
 		1A4CD17C171BFE300082F687 /* Business.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CD17B171BFE300082F687 /* Business.m */; };
 		1A4CD17F171BFE4A0082F687 /* BusinessList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CD17E171BFE4A0082F687 /* BusinessList.m */; };
 		1A59F1C31717B0EE00C679A2 /* BusinessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A59F1C21717B0EE00C679A2 /* BusinessViewController.m */; };
-		1A8ABBC717126F23000CA09A /* TabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8ABBC617126F23000CA09A /* TabbarViewController.xib */; };
-		1A8ABBCA171272D3000CA09A /* VSTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8ABBC9171272D3000CA09A /* VSTabViewController.m */; };
 		1A8ABBD21712C12E000CA09A /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8ABBD11712C12E000CA09A /* HomeStoryboard.storyboard */; };
 		1A990CA61728FA1D00A1F7E4 /* DeliTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A990CA11728FA1D00A1F7E4 /* DeliTabbar.m */; };
 		1A990CA71728FA1D00A1F7E4 /* DeliTabButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A990CA31728FA1D00A1F7E4 /* DeliTabButton.m */; };
@@ -94,6 +98,13 @@
 		1A1BD28517155EB300C782C9 /* Launch-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch-568h@2x.png"; sourceTree = "<group>"; };
 		1A1BD28617155EB300C782C9 /* Launch@.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch@.png"; sourceTree = "<group>"; };
 		1A1BD28717155EB300C782C9 /* Launch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch@2x.png"; sourceTree = "<group>"; };
+		1A27891D172A708A00B917D4 /* MessageStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MessageStoryboard.storyboard; path = UserInterface/MessageStoryboard.storyboard; sourceTree = "<group>"; };
+		1A278922172A741200B917D4 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderView.h; path = View/HeaderView.h; sourceTree = "<group>"; };
+		1A278923172A741200B917D4 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderView.m; path = View/HeaderView.m; sourceTree = "<group>"; };
+		1A278926172A775600B917D4 /* goback_highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = goback_highlight.png; path = staticImage/icon/goback_highlight.png; sourceTree = "<group>"; };
+		1A278927172A775600B917D4 /* goback_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = goback_normal.png; path = staticImage/icon/goback_normal.png; sourceTree = "<group>"; };
+		1A278928172A775600B917D4 /* gohome_highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gohome_highlight.png; path = staticImage/icon/gohome_highlight.png; sourceTree = "<group>"; };
+		1A278929172A775600B917D4 /* gohome_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gohome_normal.png; path = staticImage/icon/gohome_normal.png; sourceTree = "<group>"; };
 		1A31C30D16FFF60900B5C546 /* 励中助友.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "励中助友.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A31C31016FFF60900B5C546 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1A31C31216FFF60900B5C546 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,9 +128,6 @@
 		1A4CD17E171BFE4A0082F687 /* BusinessList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusinessList.m; path = model/BusinessList.m; sourceTree = "<group>"; };
 		1A59F1C11717B0EE00C679A2 /* BusinessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusinessViewController.h; path = Contrller/BusinessViewController.h; sourceTree = "<group>"; };
 		1A59F1C21717B0EE00C679A2 /* BusinessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusinessViewController.m; path = Contrller/BusinessViewController.m; sourceTree = "<group>"; };
-		1A8ABBC617126F23000CA09A /* TabbarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabbarViewController.xib; path = UserInterface/TabbarViewController.xib; sourceTree = "<group>"; };
-		1A8ABBC8171272D3000CA09A /* VSTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSTabViewController.h; path = Contrller/VSTabViewController.h; sourceTree = "<group>"; };
-		1A8ABBC9171272D3000CA09A /* VSTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSTabViewController.m; path = Contrller/VSTabViewController.m; sourceTree = "<group>"; };
 		1A8ABBD11712C12E000CA09A /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = HomeStoryboard.storyboard; path = UserInterface/HomeStoryboard.storyboard; sourceTree = "<group>"; };
 		1A990CA01728FA1D00A1F7E4 /* DeliTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliTabbar.h; sourceTree = "<group>"; };
 		1A990CA11728FA1D00A1F7E4 /* DeliTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliTabbar.m; sourceTree = "<group>"; };
@@ -228,6 +236,17 @@
 			path = staticImage/launch;
 			sourceTree = "<group>";
 		};
+		1A278925172A774000B917D4 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				1A278926172A775600B917D4 /* goback_highlight.png */,
+				1A278927172A775600B917D4 /* goback_normal.png */,
+				1A278928172A775600B917D4 /* gohome_highlight.png */,
+				1A278929172A775600B917D4 /* gohome_normal.png */,
+			);
+			name = icon;
+			sourceTree = "<group>";
+		};
 		1A31C30416FFF60900B5C546 = {
 			isa = PBXGroup;
 			children = (
@@ -294,8 +313,6 @@
 			children = (
 				1A09C5BF170BFBC30022581B /* BusinessGroupViewController.h */,
 				1A09C5C0170BFBC30022581B /* BusinessGroupViewController.m */,
-				1A8ABBC8171272D3000CA09A /* VSTabViewController.h */,
-				1A8ABBC9171272D3000CA09A /* VSTabViewController.m */,
 				1A59F1C11717B0EE00C679A2 /* BusinessViewController.h */,
 				1A59F1C21717B0EE00C679A2 /* BusinessViewController.m */,
 				1A05F5D317194EC7002F779D /* BusinessCell.h */,
@@ -325,10 +342,10 @@
 		1A8ABBC517126AF2000CA09A /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				1A8ABBC617126F23000CA09A /* TabbarViewController.xib */,
 				1A8ABBD11712C12E000CA09A /* HomeStoryboard.storyboard */,
 				1A074EE2171FE009009B3272 /* BusinessCell.xib */,
 				1A990CAE1729185800A1F7E4 /* SearchStoryboard.storyboard */,
+				1A27891D172A708A00B917D4 /* MessageStoryboard.storyboard */,
 			);
 			name = UserInterface;
 			sourceTree = "<group>";
@@ -351,6 +368,8 @@
 			children = (
 				1A990CAB17290FB400A1F7E4 /* TabbarView.h */,
 				1A990CAC17290FB400A1F7E4 /* TabbarView.m */,
+				1A278922172A741200B917D4 /* HeaderView.h */,
+				1A278923172A741200B917D4 /* HeaderView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -367,6 +386,7 @@
 		1AAD9CE61713B6C300737F41 /* StaticImage */ = {
 			isa = PBXGroup;
 			children = (
+				1A278925172A774000B917D4 /* icon */,
 				1A074ECF171FCE79009B3272 /* Temp Test */,
 				1A1BD28417155EB300C782C9 /* launch */,
 				1AAD9D0C1713FB6400737F41 /* galleryInHome */,
@@ -478,7 +498,6 @@
 				1A09C5C5170BFD6A0022581B /* pencil_30.png in Resources */,
 				1A09C5C7170BFD7B0022581B /* home_30.png in Resources */,
 				1A09C5C9170BFDE60022581B /* password_30.png in Resources */,
-				1A8ABBC717126F23000CA09A /* TabbarViewController.xib in Resources */,
 				1A8ABBD21712C12E000CA09A /* HomeStoryboard.storyboard in Resources */,
 				1AAD9D111713FB6400737F41 /* home_thumb_app.png in Resources */,
 				1AAD9D121713FB6400737F41 /* home_thumb_design.png in Resources */,
@@ -501,6 +520,11 @@
 				1A990CA81728FA1D00A1F7E4 /* tabbar_highlight.png in Resources */,
 				1A990CA91728FA1D00A1F7E4 /* tabbar_normal.png in Resources */,
 				1A990CAF1729185800A1F7E4 /* SearchStoryboard.storyboard in Resources */,
+				1A27891E172A708A00B917D4 /* MessageStoryboard.storyboard in Resources */,
+				1A27892A172A775600B917D4 /* goback_highlight.png in Resources */,
+				1A27892B172A775600B917D4 /* goback_normal.png in Resources */,
+				1A27892C172A775600B917D4 /* gohome_highlight.png in Resources */,
+				1A27892D172A775600B917D4 /* gohome_normal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +538,6 @@
 				1A31C31D16FFF60900B5C546 /* main.m in Sources */,
 				1A31C32116FFF60900B5C546 /* AppDelegate.m in Sources */,
 				1A09C5C1170BFBC30022581B /* BusinessGroupViewController.m in Sources */,
-				1A8ABBCA171272D3000CA09A /* VSTabViewController.m in Sources */,
 				1AAD9CDC1713B35D00737F41 /* IAInfiniteGridView.m in Sources */,
 				1AAD9CE31713B39900737F41 /* UIImage+ImageProcessing.m in Sources */,
 				1AAD9CE41713B39900737F41 /* VSTabBar.m in Sources */,
@@ -531,6 +554,7 @@
 				1A990CA71728FA1D00A1F7E4 /* DeliTabButton.m in Sources */,
 				1A990CAD17290FB400A1F7E4 /* TabbarView.m in Sources */,
 				1A990CB2172922B500A1F7E4 /* SearchViewController.m in Sources */,
+				1A278924172A741200B917D4 /* HeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
