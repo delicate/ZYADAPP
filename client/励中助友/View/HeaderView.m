@@ -65,6 +65,7 @@
     [goHomeButton setImage:goHomeImageNormal forState:UIControlStateNormal];
     [goHomeButton setImage:goHomeImageHighlight forState:UIControlStateHighlighted];
     goHomeButton.frame = CGRectMake(self.frame.size.width - goHomeImageNormal.size.width - 0, (self.frame.size.height - goHomeImageNormal.size.height) / 2, goHomeImageNormal.size.width, goHomeImageNormal.size.height);
+    [goHomeButton addTarget:self action:@selector(goHome) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:goHomeButton];
     
     title = [[UILabel alloc] init];
@@ -85,6 +86,12 @@
 {
     if (delegate && [delegate respondsToSelector:@selector(goBack)])
         [delegate goBack];
+}
+
+- (void)goHome
+{
+    if (delegate && [delegate respondsToSelector:@selector(goHome)])
+        [delegate goHome];
 }
 
 /*

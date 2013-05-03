@@ -26,8 +26,7 @@
     [globalTabbarView changeFocusIndex:0];
     //sleep(3);
     
-    CGRect headerRect = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, TABBAR_HEIGHT);
-    globalHeaderView = [[HeaderView alloc] initWithFrame:headerRect];
+    globalHeaderFrame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, TABBAR_HEIGHT);
     
     return YES;
 }

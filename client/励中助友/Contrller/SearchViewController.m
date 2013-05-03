@@ -14,6 +14,9 @@
 @end
 
 @implementation SearchViewController
+{
+    HeaderView *headerView;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,8 +29,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.view addSubview:globalTabbarView];
-	// Do any additional setup after loading the view.
+    
+    headerView = [[HeaderView alloc] initWithFrame:globalHeaderFrame];
+    [self.view addSubview:headerView];
+    headerView.delegate = self;
+    [headerView setTitle:@"搜索"];
 }
 
 - (void)didReceiveMemoryWarning

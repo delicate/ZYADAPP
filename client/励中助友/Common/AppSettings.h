@@ -18,7 +18,7 @@
 #define SCREEN_MODE_1136_640 2
 
 TabbarView *globalTabbarView;
-HeaderView *globalHeaderView;
+CGRect globalHeaderFrame;
 
 
 @interface AppSettings : NSObject

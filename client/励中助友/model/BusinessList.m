@@ -18,14 +18,6 @@
 }
 @synthesize items;
 
-+ (BusinessList *) shareInstance
-{
-    BusinessList *instance;
-    if (!instance)
-        instance = [[BusinessList alloc] init];
-    
-    return instance;
-}
 
 - (BusinessList *) initWithGroup:(BusinessGroup *)group
 {

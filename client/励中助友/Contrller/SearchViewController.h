@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HeaderView.h"
 
-@interface SearchViewController : UIViewController
+@interface SearchViewController : UIViewController <HeaderViewDelegate>
 
 @end

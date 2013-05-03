@@ -12,6 +12,7 @@
 #import "BusinessList.h"
 #import "BusinessGroup.h"
 #import "AppSettings.h"
+#import "CaseViewController.h"
 
 NSString *kCellID = @"BusinessCell";
 
@@ -22,6 +23,9 @@ NSString *kCellID = @"BusinessCell";
 @implementation BusinessViewController
 {
     BusinessList *businessList;
+    Business *selectedBusiness;
+    
+    HeaderView *headerView;
 }
 @synthesize businessGroup;
 
@@ -29,7 +33,6 @@ NSString *kCellID = @"BusinessCell";
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        
     }
     return self;
 }
@@ -39,9 +42,13 @@ NSString *kCellID = @"BusinessCell";
     [super viewDidLoad];
     if (!businessList)
         businessList = [[BusinessList alloc] initWithGroup:businessGroup];
-    [self.view addSubview:globalHeaderView];
-    globalHeaderView.delegate = self;
-    [globalHeaderView setTitle:businessGroup.groupName];
+        
+    headerView = [[HeaderView alloc] initWithFrame:globalHeaderFrame];
+    [self.view addSubview:headerView];
+    headerView.delegate = self;
+    
+    [headerView setTitle:businessGroup.groupName];
+    
     self.collectionView.frame = CGRectMake(0, 35, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
 }
 
@@ -50,6 +57,14 @@ NSString *kCellID = @"BusinessCell";
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    CaseViewController *caseViewController = [segue destinationViewController];
+    caseViewController.business = selectedBusiness;
+}
+
+#pragma mark - collectionView delegate
 
 - (NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -74,10 +89,23 @@ NSString *kCellID = @"BusinessCell";
     return cell;
 }
 
+- (void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    selectedBusiness = [businessList.items objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"ShowCases" sender:self];
+}
+
+#pragma mark - HeaderView delegate
+
 - (void)goBack
 {
     [self.navigationController popViewControllerAnimated:YES];
     //[self ]
+}
+
+- (void)goHome
+{
+    [self.navigationController popToRootViewControllerAnimated:true];
 }
 
 @end

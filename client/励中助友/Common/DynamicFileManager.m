@@ -24,7 +24,12 @@
 - (NSString *) getFullFilePathIfExists:(NSString *)fileName
 {
     //todo:增加文件是否存在的判定、对未下载文件添加到下载队列
-    return [AppSettings getFullFnInDocument:fileName];
+    NSString *filePath = [AppSettings getFullFnInDocument:fileName];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if ([fileManager fileExistsAtPath:filePath])
+        return filePath;
+    else
+        return nil;
 }
 
 @end

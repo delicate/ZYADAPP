@@ -35,13 +35,13 @@
 
 - (void) setImage:(NSString *)imageFn describe:(NSString *)describe
 {
-    /*fileManager = [DynamicFileManager shareInstance];
+    fileManager = [DynamicFileManager shareInstance];
     NSString *fullFn = [fileManager getFullFilePathIfExists:imageFn];
     if (fullFn)
     {
-        image.image = [UIImage imageNamed:fullFn];
-    }*/
-    [image setImage:[UIImage imageNamed:imageFn]];
+        [image setImage:[UIImage imageWithContentsOfFile:fullFn]];
+    }
+    //[image setImage:[UIImage imageNamed:imageFn]];
     [label setText:describe];
 }
 
