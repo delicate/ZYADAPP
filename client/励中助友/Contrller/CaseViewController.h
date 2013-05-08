@@ -12,7 +12,7 @@
 
 @class Business;
 
-@interface CaseViewController : UIViewController<IAInfiniteGridDataSource, HeaderViewDelegate>
+@interface CaseViewController : UIViewController<IAInfiniteGridDataSource, HeaderViewDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @property (retain, nonatomic) IBOutlet IAInfiniteGridView *gridView;
 @property (retain, nonatomic) Business *business;

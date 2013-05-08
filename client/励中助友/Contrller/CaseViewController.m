@@ -12,6 +12,7 @@
 #import "CaseList.h"
 #import "AppSettings.h"
 #import "DynamicFileManager.h"
+#import "CaseCell.h"
 
 @interface CaseViewController ()
 
@@ -128,5 +129,37 @@ NSInteger kNumberLabelTag = 9999;
     [self.navigationController popToRootViewControllerAnimated:true];
 }
 
+#pragma mark - UITableView delegate
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return caseList.items.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *CellIdentifier = @"Cell";
+    CaseCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if(cell == nil)
+    {
+        UINib *nib = [UINib nibWithNibName:@"CaseCell" bundle:nil];
+        [tableView registerNib:nib forCellReuseIdentifier:CellIdentifier];
+        cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    }
+    Case *aCase = [caseList.items objectAtIndex:indexPath.row];
+    NSString *aTitle = [NSString stringWithFormat:@"● %@", aCase.caseName];
+    cell.title.text = aTitle;
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50;
+}
 
 @end
